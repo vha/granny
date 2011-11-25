@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Granny</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/default.css"/>
+</head>
+<body>
+
+	<canvas id="canvas" width="800" height="600">Your browser does not support the <code>canvas</code> element. Please upgrade to a newer version.</canvas>
+    <button id="toggleAudio">Mute</button>
+    <button id="reset" disabled="disabled">Restart</button>
+    
+    <audio id="water-drop" preload="auto">
+        <source src="audio/water-drop.ogg"></source>
+        <source src="audio/water-drop.mp3"></source>
+        Your browser does not support the <code>audio</code> element.  Please upgrade to a newer version.
+    </audio>
+    
+    <audio id="cannon" preload="auto">
+        <source src="audio/cannon.ogg"></source>
+        <source src="audio/cannon.mp3"></source>
+        Your browser does not support the <code>audio</code> element.  Please upgrade to a newer version.
+    </audio>
+    
+    <audio id="bowl-catch" preload="auto">
+        <source src="audio/bowl-catch.ogg"></source>
+        <source src="audio/bowl-catch.mp3"></source>
+        Your browser does not support the <code>audio</code> element.  Please upgrade to a newer version.
+    </audio>
+    
+    <audio id="bowl-full" preload="auto">
+        <source src="audio/bowl-full.ogg"></source>
+        <source src="audio/bowl-full.mp3"></source>
+        Your browser does not support the <code>audio</code> element.  Please upgrade to a newer version.
+    </audio>
+    
+    <audio id="winner" preload="auto">
+        <source src="audio/winner.ogg"></source>
+        <source src="audio/winner.mp3"></source>
+        Your browser does not support the <code>audio</code> element.  Please upgrade to a newer version.
+    </audio>
+    
+    <audio id="death" preload="auto">
+        <source src="audio/death.ogg"></source>
+        <source src="audio/death.mp3"></source>
+        Your browser does not support the <code>audio</code> element.  Please upgrade to a newer version.
+    </audio>
+
+    <script type="text/javascript" src="js/libs/jquery-min.js"></script>
+    <script type="text/javascript" src="js/libs/underscore-min.js"></script>
+    <script type="text/javascript" src="js/libs/backbone-min.js"></script>
+    <script type="text/javascript" src="js/libs/jasmine.js"></script>
+    <script type="text/javascript" src="js/libs/utils.js"></script>
+    <script type="text/javascript" src="js/models/World.js"></script>
+    <script type="text/javascript" src="js/models/Granny.js"></script>
+    <script type="text/javascript" src="js/models/Bowl.js"></script>
+    <script type="text/javascript" src="js/models/Water.js"></script>
+    <script type="text/javascript" src="js/models/Cannon.js"></script>
+    <script type="text/javascript" src="js/collections/Waters.js"></script>
+    <script type="text/javascript" src="js/collections/Cannons.js"></script>
+    <script type="text/javascript" src="js/views/WorldView.js"></script>
+    <script type="text/javascript" src="js/views/GrannyView.js"></script>
+    <script type="text/javascript" src="js/views/BowlView.js"></script>
+    <script type="text/javascript" src="js/views/AudioView.js"></script>    
+    <script type="text/javascript" src="js/app.js"></script>
+    
+</body>
+</html>
